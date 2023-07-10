@@ -1,1 +1,1 @@
-FL /Fs /W2 /MW jbfldman.for
+FL /Fs /W2  jbfldman.for

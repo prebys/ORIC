@@ -1,1 +1,1 @@
-FL /W2 /Fs /MW jbpfield.for acclib.obj
+FL /W2 /Fs  jbpfield.for ..\jbaccel\acclib.obj

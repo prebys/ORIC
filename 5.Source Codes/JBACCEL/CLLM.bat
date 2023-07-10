@@ -1,1 +1,1 @@
-FL /W2 /Fs /MW jbaccel.obj acclib.for
+FL /W2 /Fs jbaccel.obj acclib.for
