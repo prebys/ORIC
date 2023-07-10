@@ -1,0 +1,41 @@
+! D45wlc0  -  User Guide Example                                                
+! These are starting parameters as derived in the Users Guide for               
+!   the example case of 45 MeV deuterons at 31 inch extraction radius.          
+! This input holds all parameters fixed except for the main field,              
+!   T1-T8, and the AM and PH of harmonic coils 1 and 4.                         
+!                                 |                                    ^        
+  45.000    2H    1.      .000   1.                                             
+FREQ=13.04  DEEV=60.0  PHINIT=30.0  HA= 1.     LC                               
+  33.870  35.070  2783.0  2167.0                                                
+                                                                                
+MAIN=   3843.0                                                                  
+TRIM= 1   -202.00, 2   -456.00, 3     34.00, 4    196.00, 5    252.00,          
+      6   179.00,  7   501.00,  8    39.00,F 9      .00,F10      .00,           
+HAR=F OF1    25.00,  AM1     5.00,  PH1     5.00,                               
+    F OF2      .00,F AM2      .00,F PH2      .00,                               
+    F OF3      .00,F AM3      .00,F PH3      .00,                               
+    F OF4   320.00,  AM4    20.00,  PH4   100.00,                               
+                                                                                
+                                                                                
+                                                                                
+                          
+                                            
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+              
+              
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                

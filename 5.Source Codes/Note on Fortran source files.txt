@@ -1,0 +1,5 @@
+For the programs written for Microsoft Fortran 6.1, the batch files have been included that were used to facilitate the compile and linking process for these programs.  As an example of the naming convention used for the .bat files,in the case of JBACCEL:
+  CMCL = compile main, compile library
+  CMLL = compile main, link library object file
+  
+Note that for the library file, acclib, the source file is included only in the JBACCEL source folder.  All other folders contain the library object file. 

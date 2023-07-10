@@ -1,0 +1,41 @@
+! D45wlcI  -  User Guide Example                                                
+! These are starting parameters as derived in the Users Guide for               
+!   the example case of 45 MeV deuterons at 31 inch extraction radius,          
+!   with T1-T8, and the AM and PH of harmonic coils 1 and 4 adjusted            
+!   by the ISOC program.                                                        
+!                                 |                                    ^        
+  45.000    2H    1.      .000   1.               04/02/07  14:53:49            
+FREQ=13.04  DEEV=60.0  PHINIT=30.0  HA= 1.     LC                               
+  33.870  35.070  2783.0  2167.0                                                
+                                                                                
+MAIN=F  3887.0                                                                  
+TRIM= 1   -158.65, 2   -400.29, 3    -73.93, 4    227.88, 5    211.03,          
+      6   162.58,  7   477.72,  8     6.37,F 9      .00,F10      .00,           
+HAR=F OF1    25.00,  AM1     5.72,  PH1   -42.82,                               
+    F OF2      .00,F AM2      .00,F PH2      .00,                               
+    F OF3      .00,F AM3      .00,F PH3      .00,                               
+    F OF4   320.00,  AM4    64.68,  PH4   263.00,                               
+                                                                                
+                                                                                
+                                                                                
+LOWCHAN     INNER=2783.0    ENT=33.870   STRENGTH= 6.355                        
+LOWCHAN     OUTER=2167.0   EXIT=35.070                                          
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+RFBC=  32.881    BFBC=-.157749E-01    EFBC=  45.001    TFBC=  28.250            
+RIBC=   1.263    BIBC= .216052E-02    EIBC=    .082    TIBC=  13.260            
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
