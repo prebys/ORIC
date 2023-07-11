@@ -621,6 +621,9 @@ C
       DIMENSION PROG(2),A(8)
       INTEGER DTM,DTMP,DTM1
       CHARACTER DUM*12,PRMID*32,DTFIL*16,CC*1,CS*1,VNUM*8,ET*8
+C Declare DAT a character string -EjP 20230706
+      CHARACTER DAT*4
+      
 C
 Cjbb    - use new time and date subroutine
 Cjbb  CALL DATE_AND_TIME(DUM,DUM,DUM,DTM)

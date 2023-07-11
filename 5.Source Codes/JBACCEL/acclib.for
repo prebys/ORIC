@@ -1283,7 +1283,9 @@ Cjbb
 
 C$PROG NSCRAM
       FUNCTION NSCRAM(I,L,A)
-      DIMENSION L(2)
+C Not legal in modern fortran - EjP 20230706
+C      DIMENSION L(2)
+      CHARACTER*4 L(2)
       CHARACTER*8 LBUF
 C
       LBUF(1:4)=L(1)
@@ -1364,8 +1366,10 @@ C
 C
       LOGICAL IEND
       CHARACTER XFLAG*4
-C
-      DIMENSION IWD(20),JWD(80),KWD(320),LWD(1),ITYP(1)
+C Eliminate illegal equivalence of integer and characters -EjP 20230706
+C      DIMENSION IWD(20),JWD(80),KWD(320),LWD(1),ITYP(1)
+      CHARACTER*4 IWD(20)
+      DIMENSION JWD(80),KWD(320),LWD(1),ITYP(1)
 C
       COMMON /RIP1/LTERM,LASTER,LGRED,NXT
 C
