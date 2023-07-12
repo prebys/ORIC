@@ -994,6 +994,9 @@ C
       DIMENSION PROG(2),A(8)
       INTEGER DTM,DTM1
       CHARACTER DUM*12,PRMID*32,DTFIL*16,CC*1,CS*1,VNUM*8,ET*8
+C Declare DAT(4) a character string, which it's clearly supposed to be
+C EjP 20230712
+      CHARACTER*4 DAT
 C
 Cjbb    - use new time and date subroutine
 Cjbb  CALL DATE_AND_TIME(DUM,DUM,DUM,DTM)
@@ -1291,6 +1294,9 @@ C
       DIMENSION Y(3),YP(3)
       COMMON /FEQOR/ALPHA,VV
       DOUBLE PRECISION VB,SV,Y,YP
+C ARGSV was not originally DOUBLE PRECISION, which appears to have been a mistake.
+C EjP 20230712
+      DOUBLE PRECISION ARGSV
       VB=VV
 Cjbb
       ARGSV=VB*VB-Y(2)*Y(2)
