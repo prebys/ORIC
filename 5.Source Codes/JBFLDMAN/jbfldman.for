@@ -895,7 +895,10 @@ C     Subroutine to make a date/time stamp for field data files
 C     J Ball      8/12/2006
 C
       IMPLICIT NONE
-      INTEGER*4 DAT(4),DTM(8),DTM1,I
+C Make DAT at CHARACTER*4 instead of an INTEGER. EjP 20230712      
+C      INTEGER*4 DAT(4),DTM(8),DTM1,I     
+      INTEGER*4 DTM(8),DTM1,I
+      CHARACTER*4 DAT(4)
       CHARACTER DTFIL*16,CC*1,CS*1
 C
 C                - get date and time from system call
