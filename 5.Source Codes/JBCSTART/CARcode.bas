@@ -61,7 +61,8 @@ Public Sub Freq()
     rf = 1878.486 * Sqr(1# - (PartM / (E + PartM)) ^ 2) / (R * dL)
     rf = Round(rf, 2)
     frmC.txtFreq.Text = rf
-    If rf <= 19.01 Then
+'Updating to 24.1 for UC Davis
+    If rf <= 24.01 Then
       frmC.txtFreq.BackColor = &HFFFFFF
       frmC.cmdCalc.Enabled = True
     Else

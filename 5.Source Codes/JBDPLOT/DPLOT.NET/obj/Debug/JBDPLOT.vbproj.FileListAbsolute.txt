@@ -1,0 +1,4 @@
+Z:\Box Sync\CNL\ORIC\5.Source Codes\JBDPLOT\DPLOT.NET\obj\Debug\ResolveAssemblyReference.cache
+Z:\Box Sync\CNL\ORIC\5.Source Codes\JBDPLOT\DPLOT.NET\obj\Debug\DPLOT.frmAbout.resources
+Z:\Box Sync\CNL\ORIC\5.Source Codes\JBDPLOT\DPLOT.NET\obj\Debug\DPLOT.frmDplot.resources
+Z:\Box Sync\CNL\ORIC\5.Source Codes\JBDPLOT\DPLOT.NET\obj\Debug\JBDPLOT.vbproj.GenerateResource.Cache

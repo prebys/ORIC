@@ -1,8 +1,8 @@
 Type=Exe
 Form=frmCARSTART.frm
-Reference=*\G{00020430-0000-0000-C000-000000000046}#2.0#0#C:\WINNT\System32\STDOLE2.TLB#OLE Automation
+Reference=*\G{00020430-0000-0000-C000-000000000046}#2.0#0#C:\Windows\SysArm32\stdole2.tlb#OLE Automation
 Module=CARcode; CARcode.bas
-Reference=*\G{00025E01-0000-0000-C000-000000000046}#5.0#0#C:\Program Files\Common Files\Microsoft Shared\DAO\dao360.dll#Microsoft DAO 3.6 Object Library
+Reference=*\G{00025E01-0000-0000-C000-000000000046}#5.0#0#C:\Program Files (x86)\Common Files\Microsoft Shared\DAO\dao360.dll#Microsoft DAO 3.6 Object Library
 IconForm="frmC"
 Startup="frmC"
 HelpFile=""

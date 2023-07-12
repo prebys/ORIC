@@ -2,12 +2,12 @@ VERSION 5.00
 Begin VB.Form frmC 
    BackColor       =   &H00FFC0C0&
    Caption         =   "JBCSTART 062407"
-   ClientHeight    =   9444
-   ClientLeft      =   48
-   ClientTop       =   336
+   ClientHeight    =   9450
+   ClientLeft      =   45
+   ClientTop       =   330
    ClientWidth     =   7920
    LinkTopic       =   "Form1"
-   ScaleHeight     =   9444
+   ScaleHeight     =   9450
    ScaleWidth      =   7920
    StartUpPosition =   3  'Windows Default
    Begin VB.TextBox txtKB 
@@ -15,7 +15,7 @@ Begin VB.Form frmC
       BackColor       =   &H00FFFFFF&
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -32,7 +32,7 @@ Begin VB.Form frmC
       Caption         =   "Add extraction radius and Coax data to first comment card"
       BeginProperty Font 
          Name            =   "Arial"
-         Size            =   7.8
+         Size            =   7.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -65,7 +65,7 @@ Begin VB.Form frmC
    Begin VB.TextBox txtID 
       BeginProperty Font 
          Name            =   "Courier New"
-         Size            =   10.2
+         Size            =   10.5
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -81,7 +81,7 @@ Begin VB.Form frmC
    Begin VB.TextBox txtCoax 
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -97,7 +97,7 @@ Begin VB.Form frmC
    Begin VB.TextBox txtT2 
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -113,7 +113,7 @@ Begin VB.Form frmC
    Begin VB.TextBox txtT1 
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -129,7 +129,7 @@ Begin VB.Form frmC
    Begin VB.TextBox txtT8 
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -145,7 +145,7 @@ Begin VB.Form frmC
    Begin VB.TextBox txtT5 
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -161,7 +161,7 @@ Begin VB.Form frmC
    Begin VB.TextBox txtT7 
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -177,7 +177,7 @@ Begin VB.Form frmC
    Begin VB.TextBox txtT4 
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -193,7 +193,7 @@ Begin VB.Form frmC
    Begin VB.TextBox txtT6 
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -209,7 +209,7 @@ Begin VB.Form frmC
    Begin VB.TextBox txtT3 
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -225,7 +225,7 @@ Begin VB.Form frmC
    Begin VB.TextBox txtLCout 
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -241,7 +241,7 @@ Begin VB.Form frmC
    Begin VB.TextBox txtLCin 
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -257,7 +257,7 @@ Begin VB.Form frmC
    Begin VB.TextBox txtMain 
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -274,7 +274,7 @@ Begin VB.Form frmC
       Caption         =   "Calculate initial magnet coil currents"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -292,7 +292,7 @@ Begin VB.Form frmC
       BackColor       =   &H00FFFFFF&
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -309,7 +309,7 @@ Begin VB.Form frmC
       Alignment       =   2  'Center
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -325,7 +325,7 @@ Begin VB.Form frmC
    Begin VB.ComboBox cbxPart 
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -342,7 +342,7 @@ Begin VB.Form frmC
    Begin VB.ComboBox cbxR 
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -360,7 +360,7 @@ Begin VB.Form frmC
       Caption         =   "Write this parameter set to file"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -378,7 +378,7 @@ Begin VB.Form frmC
       Caption         =   "(keep between 45 and 98)"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -396,7 +396,7 @@ Begin VB.Form frmC
       Caption         =   "Classical Field Constant K is"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -414,7 +414,7 @@ Begin VB.Form frmC
       BackStyle       =   0  'Transparent
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -434,7 +434,7 @@ Begin VB.Form frmC
       Caption         =   $"frmCARSTART.frx":0000
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -453,7 +453,7 @@ Begin VB.Form frmC
       Caption         =   "Enter parameter set identification (32 characters max)"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -472,7 +472,7 @@ Begin VB.Form frmC
       Caption         =   "Coax ="
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -491,7 +491,7 @@ Begin VB.Form frmC
       Caption         =   "T2 ="
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -510,7 +510,7 @@ Begin VB.Form frmC
       Caption         =   "T1 ="
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -529,7 +529,7 @@ Begin VB.Form frmC
       Caption         =   "T8 ="
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -548,7 +548,7 @@ Begin VB.Form frmC
       Caption         =   "T5 ="
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -567,7 +567,7 @@ Begin VB.Form frmC
       Caption         =   "T7 ="
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -586,7 +586,7 @@ Begin VB.Form frmC
       Caption         =   "T4 ="
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -605,7 +605,7 @@ Begin VB.Form frmC
       Caption         =   "T6 ="
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -624,7 +624,7 @@ Begin VB.Form frmC
       Caption         =   "T3 ="
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -643,7 +643,7 @@ Begin VB.Form frmC
       Caption         =   "LC-out ="
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -662,7 +662,7 @@ Begin VB.Form frmC
       Caption         =   "LC-in ="
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -681,7 +681,7 @@ Begin VB.Form frmC
       Caption         =   "Main ="
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -696,10 +696,10 @@ Begin VB.Form frmC
    End
    Begin VB.Label lblRFnote 
       BackStyle       =   0  'Transparent
-      Caption         =   "(must not exceed 19.0)"
+      Caption         =   "(must not exceed 24.0)"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -718,7 +718,7 @@ Begin VB.Form frmC
       Caption         =   "Coresponding rf frequency is"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -736,7 +736,7 @@ Begin VB.Form frmC
       Caption         =   "and      Extraction Radius"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -754,7 +754,7 @@ Begin VB.Form frmC
       Caption         =   "Energy"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -773,7 +773,7 @@ Begin VB.Form frmC
       Caption         =   "Select Particle"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False

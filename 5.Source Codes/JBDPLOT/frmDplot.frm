@@ -1,26 +1,25 @@
 VERSION 5.00
-Object = "{F9043C88-F6F2-101A-A3C9-08002B2F49FB}#1.2#0"; "COMDLG32.OCX"
 Begin VB.Form frmDplot 
    AutoRedraw      =   -1  'True
    BackColor       =   &H00FFFFFF&
    Caption         =   "JBDPLOT -  Diagnostics Viewer"
    ClientHeight    =   11820
-   ClientLeft      =   132
-   ClientTop       =   708
-   ClientWidth     =   9912
+   ClientLeft      =   225
+   ClientTop       =   870
+   ClientWidth     =   9915
    LinkTopic       =   "Form1"
    ScaleHeight     =   11.478
    ScaleMode       =   0  'User
    ScaleWidth      =   8.765
    StartUpPosition =   3  'Windows Default
-   Begin MSComDlg.CommonDialog CommonDialog1 
+   Begin VB.PictureBox CommonDialog1 
+      Height          =   480
       Left            =   720
+      ScaleHeight     =   420
+      ScaleWidth      =   1140
+      TabIndex        =   0
       Top             =   840
-      _ExtentX        =   677
-      _ExtentY        =   677
-      _Version        =   393216
-      FromPage        =   1
-      ToPage          =   1
+      Width           =   1200
    End
    Begin VB.Menu mnuFile 
       Caption         =   "File"
@@ -111,7 +110,7 @@ Private Sub mnuLast5_Click()
 End Sub
 
 Private Sub mnuPrint_Click()
-  CommonDialog1.CancelError = True
+'  CommonDialog1.CancelError = True
   On Error GoTo ErrHandler
   CommonDialog1.ShowPrinter
   Set PRN = Printer
