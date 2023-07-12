@@ -112,7 +112,7 @@ End Sub
 Private Sub mnuPrint_Click()
 '  CommonDialog1.CancelError = True
   On Error GoTo ErrHandler
-  CommonDialog1.ShowPrinter
+'  CommonDialog1.ShowPrinter
   Set PRN = Printer
   kprn = 1
   Call Prep

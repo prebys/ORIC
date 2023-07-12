@@ -10,6 +10,14 @@ Public IDflag, Xflag As Integer
 Public PartM, partA, partZ, E, R, dL, Rad(9), rf, KB As Single
 
 Public Sub Main()
+' For some reason, when running on Win 11, you have to explicitly set the working directory to the
+' Application directory. Since I'm building this code in a Virtual machine on the Mac, I also have to
+' Add a kludge to replace "\\Mac\Home" with "Z:".  There's probably a more elegant way to do it.
+' EjP 20130712
+  fixpath = Replace(App.Path, "\\Mac\Home", "Z:")
+  ChDrive fixpath
+  ChDir fixpath
+'--EjP
   Eflag = 0
   Pflag = 0
   Rflag = 0
