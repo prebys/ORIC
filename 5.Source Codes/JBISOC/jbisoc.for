@@ -18,7 +18,11 @@ C
       COMMON /MGCONE/DNU(16),ENU(16)
       COMMON /VERS/VNUM,PRMID
       DOUBLE PRECISION ET
-      EXTERNAL PURRT,PCURRT,DURRT,DDURRT,MSGHDL
+C MSGHDL appears to have been related to a CNTL-C handling routine, but it's been
+C commented out in ACCLIB and causes a link error, so I'm getting rid of it.
+C EjP 20230712
+C      EXTERNAL PURRT,PCURRT,DURRT,DDURRT,MSGHDL
+      EXTERNAL PURRT,PCURRT,DURRT,DDURRT
 C
       CHARACTER*8  CPROG,VNUM,PRMID*32
       CHARACTER*32 CTPROG
@@ -1370,6 +1374,11 @@ C
       INTEGER*4 IWD(20),LWD(2,40),NF,IB,IW,NCHAR,NBUF(20)
       CHARACTER CBUF*80,A1*4,A4*4
       EQUIVALENCE (NBUF(1),CBUF)
+C Make equivalences for A1 and A4 to get around CHARACTER/INTEGER problems
+C EjP 20230712
+	  INTEGER*4 IA1,IA4
+	  EQUIVALENCE (IA1,A1)
+	  EQUIVALENCE (IA4,A4)
 C
       DO 5 IB=1,20
     5 NBUF(IB)=IWD(IB)
@@ -1383,13 +1392,17 @@ C
 C
       IF(IB.GT.NCHAR) GO TO 30
       A1=CBUF(IB:IB)
-      IF(A1.GT.64.AND.A1.LT.91) THEN   !its a capital letter
+C Use Integer equivalence of A1. 20230712 EjP
+C      IF(A1.GT.64.AND.A1.LT.91) THEN   !its a capital letter
+      IF(IA1.GT.64.AND.IA1.LT.91) THEN   !its a capital letter
         IW=IW+1
         A4(IW:IW)=A1
         GO TO 20
       ELSE
         IF(IW.GT.0) THEN    !anything else becomes a delimiter
-          LWD(1,NF)=A4
+C Use Integer equivalence of A4. 20230712 EjP
+C          LWD(1,NF)=A4
+          LWD(1,NF)=IA4
           GO TO 10
         ELSE             !its just something to skip
           GO TO 20
@@ -1510,6 +1523,8 @@ C
       DIMENSION PROG(2),A(8)
       INTEGER DTM,DTM1
       CHARACTER DUM*12,PRMID*32,DTFIL*16,CC*1,CS*1,VNUM*8,ET*8
+C Declare DAT a CHARACTER*4.  EjP 20230712
+      CHARACTER*4 DAT
 C
 Cjbb    - use new time and date subroutine
 Cjbb  CALL DATE_AND_TIME(DUM,DUM,DUM,DTM)
