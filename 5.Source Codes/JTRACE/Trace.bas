@@ -20,6 +20,15 @@ Public Sub Main()
 '  This is the starting routine that sets initial parameters
 '    and then loads the main screen
 '
+' For some reason, when running on Win 11, you have to explicitly set the working directory to the
+' Application directory. Since I'm building this code in a Virtual machine on the Mac, I also have to
+' add a kludge to replace "\\Mac\Home" with "Z:".  There's probably a more elegant way to do it.
+' EjP 20130712
+  fixpath = Replace(App.Path, "\\Mac\Home", "Z:")
+  ChDrive fixpath
+  ChDir fixpath
+'--EjP
+
    namVers = "Vers. 021607"
    DPR = 57.2957795
    Kfoil = 0       'no stripper foil until called for
@@ -624,8 +633,18 @@ Public Sub PlotInfo()
   frmPlot.Print "         Starting CX =   "; prnCX
   frmPlot.CurrentY = -10
   frmPlot.CurrentX = 71
-  prnLastX = Format(X(I - 1), "##0.0")
-  prnLastY = Format(Y(I - 1), "##0.0")
+  ' On the first pass, this tries to access X(-1), which I guess used to work.
+  ' So now I test on I.  EjP 20230713
+  '
+  If (I > 0) Then
+    prnLastX = Format(X(I - 1), "##0.0")
+    prnLastY = Format(Y(I - 1), "##0.0")
+  Else
+    prnLastX = "0.0"
+    prnLastY = "0.0"
+  End If
+  ' --EjP
+    
   frmPlot.Print "          Last X = "; prnLastX
   frmPlot.CurrentX = 71
   frmPlot.Print "          Last Y = "; prnLastY

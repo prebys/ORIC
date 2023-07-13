@@ -1,4 +1,0 @@
-Z:\Box Sync\CNL\ORIC\5.Source Codes\JTRACE\JTrace.NET\obj\Debug\ResolveAssemblyReference.cache
-Z:\Box Sync\CNL\ORIC\5.Source Codes\JTRACE\JTrace.NET\obj\Debug\JTrace.frmMain.resources
-Z:\Box Sync\CNL\ORIC\5.Source Codes\JTRACE\JTrace.NET\obj\Debug\JTrace.frmPlot.resources
-Z:\Box Sync\CNL\ORIC\5.Source Codes\JTRACE\JTrace.NET\obj\Debug\JTrace.vbproj.GenerateResource.Cache

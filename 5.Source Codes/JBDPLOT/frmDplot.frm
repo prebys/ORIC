@@ -110,6 +110,8 @@ Private Sub mnuLast5_Click()
 End Sub
 
 Private Sub mnuPrint_Click()
+' The common dialog methods are not found in VB under Win 11, so I commented them out.
+' This might affect printing. EjP 20230713
 '  CommonDialog1.CancelError = True
   On Error GoTo ErrHandler
 '  CommonDialog1.ShowPrinter
